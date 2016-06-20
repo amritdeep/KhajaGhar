@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
@@ -25,6 +24,20 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
+
+group :development, :test do
+	gem 'guard'
+  	gem 'guard-rails', require: false
+  	gem 'guard-livereload', '~> 2.5', require: false
+
+  	gem 'rspec-rails', '~> 3.4'
+  	gem 'guard-rspec', require: false
+
+  	gem 'pry'
+  	gem 'pry-rails'
+	gem 'pry-remote'
+	gem 'pry-nav'  	
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
