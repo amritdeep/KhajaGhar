@@ -36,8 +36,12 @@ group :development, :test do
 
   	gem 'pry'
   	gem 'pry-rails'
-	gem 'pry-remote'
-	gem 'pry-nav'  	
+  	gem 'pry-remote'
+  	gem 'pry-nav'  	
+end
+
+group :production do 
+  gem "pg"
 end
 
 # Use ActiveModel has_secure_password

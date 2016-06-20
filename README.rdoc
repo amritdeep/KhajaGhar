@@ -1,28 +1,21 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CODE CHALLENGE: 
 
-Things you may want to cover:
+Please implement a simple restaurant reservation system as a simple rails app.  
 
-* Ruby version
+We care about simple reservation requests like "I'd like a table for 4 at 7pm on Friday".  We don't need to think about special requests ("I want to be near the window", etc) and the tables are all bolted down to the floor so they can't be moved around to create larger tables. You can choose however many tables you want for capacity. 
 
-* System dependencies
+No user accounts or authentication are necessary.
 
-* Configuration
+The UI should be a table of all existing reservations, and a field to enter the name and timestamp for a new reservation request.
 
-* Database creation
+Submitting a new request should either add the reservation and display a success message, or show a capacity error.  
 
-* Database initialization
+Please use sqlite for a relational database and push it up to Heroku. 
 
-* How to run the test suite
+The same assumptions from the phone conversation can be made: the restaurant is open 24 hours per day, and each reservation starts on the hour and lasts exactly one hour. We are primarily interested in seeing your code design and automated testing, and whether it works correctly, of course. 
 
-* Services (job queues, cache servers, search engines, etc.)
+When you are finished please send me the public repo link and the Heroku link so we can review.
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Thanks and I look forward to speaking with you soon! 
