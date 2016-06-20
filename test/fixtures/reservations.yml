@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  table: MyString
+  integer,: MyString
+  guest: MyString
+  integer,: MyString
+  time: MyString
+  time: MyString
+
+two:
+  name: 
+  table: MyString
+  integer,: MyString
+  guest: MyString
+  integer,: MyString
+  time: MyString
+  time: MyString
