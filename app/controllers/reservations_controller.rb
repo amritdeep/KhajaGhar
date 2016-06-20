@@ -1,5 +1,5 @@
 class ReservationsController < ApplicationController
-  
+
   def new
   	@reservations = Reservation.new
   end
@@ -17,6 +17,11 @@ class ReservationsController < ApplicationController
   end
 
   def show
+  	@reservations = Reservation.find(params[:id])
+  end
+
+  def index
+  	@reservations = Reservation.all
   end
 
   private
