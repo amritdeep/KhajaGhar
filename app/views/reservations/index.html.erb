@@ -1,22 +1,26 @@
-<table border="1">
-<tr>
-	<th>Table</th>
-	<th>Guest</th>
-	<th>Time</th>
-	<th>Book By</th>
-</tr>
+<% if @reservations.present? %>
+	<table border="1">
+	<tr>
+		<th>Table</th>
+		<th>Guest</th>
+		<th>Time</th>
+		<th>Book By</th>
+	</tr>
 
-<% @reservations.each do |reservations| %>
+	<% @reservations.each do |reservations| %>
 
-<tr>
-	<td><%= reservations.table %></td>
-	<td><%= reservations.guest %></td>
-	<td><%= reservations.time %></td>
-	<td><%= reservations.name %></td>
-</tr>
+	<tr>
+		<td><%= reservations.table %></td>
+		<td><%= reservations.guest %></td>
+		<td><%= reservations.time %></td>
+		<td><%= reservations.name %></td>
+	</tr>
+
+	<% end %>
+		
+	</table>
 
 <% end %>
-	
-</table>
+
 
 <%= link_to "Make Reservations", new_reservation_path %>
