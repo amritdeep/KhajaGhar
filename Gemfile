@@ -31,6 +31,7 @@ group :development, :test do
   	gem 'guard-livereload', '~> 2.5', require: false
 
   	gem 'rspec-rails', '~> 3.4'
+  	gem 'factory_girl'
   	gem 'guard-rspec', require: false
 
   	gem 'pry'
