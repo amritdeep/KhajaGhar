@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'reservation/new'
+  # get 'reservation/new'
+
+  resources :reservations
 
   # get 'home/index'
   root 'home#index'

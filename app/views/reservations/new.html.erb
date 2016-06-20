@@ -1,0 +1,15 @@
+<%= form_for(@reservations) do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :table %>:
+  <%= f.text_field :table %><br />
+
+  <%= f.label :guest %>:
+  <%= f.text_field :guest %><br />  
+
+  <%= f.label :time %>:
+  <%= f.time_field :time %><br />
+
+  <%= f.submit "Make Reservation" %>
+<% end %>
